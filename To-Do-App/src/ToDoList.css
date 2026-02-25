@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;                 /*making flex box*/
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+input:focus {
+  border-color: #667eea;
+}
+
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 0.1s ease, box-shadow 0.3s ease;
+}
+li:hover {
+  padding: 10px; /* increses the height smoothly */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+small {
+  font-size: 12px;
+  color: gray;
+}
+
+li span {
+  color: #333;
+}
+
+li button {
+  background: #ff4d4d;
+}
+li button:hover {
+  background: #e63946;
+}
