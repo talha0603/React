@@ -34,6 +34,7 @@ function Try() {
     <div>
         {/* <p>Count: {count}</p>
         <button onClick={ () => setCount( count + 1 ) }>Press</button> */}
+        <h2>Color Changing</h2>
         <p style={ {color: color} }>Seconds: {second}</p>
     </div>
   )
